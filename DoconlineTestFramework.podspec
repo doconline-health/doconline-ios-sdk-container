@@ -96,7 +96,7 @@ spec.swift_version = "5.0"
     spec.dependency "JJFloatingActionButton"
     spec.dependency "AnimatedCollectionViewLayout", "~> 1.0.0"
 
-    spec.dependency "Sentry"
+    #spec.dependency "Sentry"
 
 
     #spec.dependency "SQLite.swift", "~> 0.11.5"
