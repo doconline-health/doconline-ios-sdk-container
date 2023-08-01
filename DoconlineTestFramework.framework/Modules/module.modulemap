@@ -1,0 +1,11 @@
+framework module DoconlineTestFramework {
+  umbrella header "DoconlineTestFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module DoconlineTestFramework.Swift {
+  header "DoconlineTestFramework-Swift.h"
+  requires objc
+}

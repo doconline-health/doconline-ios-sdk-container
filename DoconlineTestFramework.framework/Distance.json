@@ -1,0 +1,2 @@
+
+{"aggregateBy":[{"dataTypeName":"com.google.distance.delta","dataSourceId":"derived:com.google.distance.delta:com.google.android.gms:merge_distance_delta"}],"startTimeMillis": 1649442600000,"endTimeMillis": 1649528999000}

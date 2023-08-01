@@ -1,0 +1,2431 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name DoconlineTestFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Alamofire
+import AnimatedCollectionViewLayout
+import AppsFlyerLib
+import AuthenticationServices
+import BIZPopupView
+import BSImagePicker
+import CoreGraphics.CGGeometry
+import CallKit
+import CoreData
+import CoreGraphics
+import CoreLocation
+import CoreMedia
+import DateToolsSwift
+@_exported import DoconlineTestFramework
+import EventKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+import Foundation
+import Fuzi
+import GooglePlacesSearchController
+import HealthKit
+import ImageSlideshow
+import JJFloatingActionButton
+import JSQMessagesViewController
+import KeychainAccess
+import Kingfisher
+import Localize_Swift
+import MapKit
+import MessageUI
+import MobileCoreServices
+import NVActivityIndicatorView
+import Neon
+import ObjectMapper
+import OpenTok
+import Photos
+import PushKit
+import QuartzCore
+import QuickLook
+import Razorpay
+import SQLite
+import SWXMLHash
+import SafariServices
+import Swift
+import SwiftMessages
+import SwiftyJSON
+import SystemConfiguration
+import UIKit
+import UPCarouselFlowLayout
+import UserNotifications
+import WMGaugeView
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class IQKeyboardReturnKeyHandler : ObjectiveC.NSObject, UIKit.UITextFieldDelegate, UIKit.UITextViewDelegate {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any UIKit.UITextFieldDelegate & UIKit.UITextViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var lastTextFieldReturnKeyType: UIKit.UIReturnKeyType {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController)
+  @objc deinit
+  @objc @_Concurrency.MainActor(unsafe) public func addTextFieldView(_ view: UIKit.UIView)
+  @objc @_Concurrency.MainActor(unsafe) public func removeTextFieldView(_ view: UIKit.UIView)
+  @objc @_Concurrency.MainActor(unsafe) public func addResponderFromView(_ view: UIKit.UIView)
+  @objc @_Concurrency.MainActor(unsafe) public func removeResponderFromView(_ view: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @available(iOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField, reason: UIKit.UITextField.DidEndEditingReason)
+  @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textViewShouldBeginEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textViewShouldEndEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc public func textViewDidChangeSelection(_ textView: UIKit.UITextView)
+  @available(iOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) @objc public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
+  @available(iOS 10.0, *)
+  @_Concurrency.MainActor(unsafe) @objc public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith textAttachment: UIKit.NSTextAttachment, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
+  @available(iOS, deprecated: 10.0)
+  @_Concurrency.MainActor(unsafe) @objc public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange) -> Swift.Bool
+  @available(iOS, deprecated: 10.0)
+  @_Concurrency.MainActor(unsafe) @objc public func textView(_ aTextView: UIKit.UITextView, shouldInteractWith textAttachment: UIKit.NSTextAttachment, in characterRange: Foundation.NSRange) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class IQBarButtonItem : UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var tintColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open func setTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector?)
+  @objc @_Concurrency.MainActor(unsafe) open var invocation: DoconlineTestFramework.IQInvocation?
+  @objc deinit
+}
+public enum DateStyle {
+  case twelveHour
+  case twentyFourHour
+  case system
+  public static func == (a: DoconlineTestFramework.DateStyle, b: DoconlineTestFramework.DateStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class CalendarStyle : Foundation.NSCopying {
+  public var header: DoconlineTestFramework.DayHeaderStyle
+  public var timeline: DoconlineTestFramework.TimelineStyle
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public class DayHeaderStyle : Foundation.NSCopying {
+  public var daySymbols: DoconlineTestFramework.DaySymbolsStyle
+  public var daySelector: DoconlineTestFramework.DaySelectorStyle
+  public var swipeLabel: DoconlineTestFramework.SwipeLabelStyle
+  public var backgroundColor: UIKit.UIColor
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public class DaySelectorStyle : Foundation.NSCopying {
+  public var activeTextColor: UIKit.UIColor
+  public var selectedBackgroundColor: UIKit.UIColor
+  public var weekendTextColor: UIKit.UIColor
+  public var inactiveTextColor: UIKit.UIColor
+  public var inactiveBackgroundColor: UIKit.UIColor
+  public var todayInactiveTextColor: UIKit.UIColor
+  public var todayActiveBackgroundColor: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public var todayFont: UIKit.UIFont
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public class DaySymbolsStyle : Foundation.NSCopying {
+  public var weekendColor: UIKit.UIColor
+  public var weekDayColor: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public class SwipeLabelStyle : Foundation.NSCopying {
+  public var textColor: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public class TimelineStyle : Foundation.NSCopying {
+  public var timeIndicator: DoconlineTestFramework.CurrentTimeIndicatorStyle
+  public var timeColor: UIKit.UIColor
+  public var lineColor: UIKit.UIColor
+  public var backgroundColor: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public var dateStyle: DoconlineTestFramework.DateStyle
+  public var eventsWillOverlap: Swift.Bool
+  public var splitMinuteInterval: Swift.Int
+  public var verticalDiff: CoreFoundation.CGFloat
+  public var verticalInset: CoreFoundation.CGFloat
+  public var leftInset: CoreFoundation.CGFloat
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public class CurrentTimeIndicatorStyle : Foundation.NSCopying {
+  public var color: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public var dateStyle: DoconlineTestFramework.DateStyle
+  public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AllDayStyle : Foundation.NSCopying {
+  public var backgroundColor: UIKit.UIColor
+  public var allDayFont: UIKit.UIFont
+  public var allDayColor: UIKit.UIColor
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+public struct PageAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public var scaleRate: CoreFoundation.CGFloat
+  public init(scaleRate: CoreFoundation.CGFloat = 0.2)
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+@objc @_Concurrency.MainActor(unsafe) open class DatePickerDialog : UIKit.UIView {
+  public typealias DatePickerCallback = (Foundation.Date?) -> Swift.Void
+  @_Concurrency.MainActor(unsafe) open var datePicker: UIKit.UIDatePicker!
+  @_Concurrency.MainActor(unsafe) public init(showCancelButton: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func showDate(_ title: Swift.String, doneButtonTitle: Swift.String = "Done", cancelButtonTitle: Swift.String = "Cancel", _ defaultDate: Foundation.Date, minimumDate: Foundation.Date? = nil, maximumDate: Foundation.Date? = nil, datePickerMode: UIKit.UIDatePicker.Mode = .dateAndTime, callback: @escaping DoconlineTestFramework.DatePickerDialog.DatePickerCallback)
+  @_Concurrency.MainActor(unsafe) open func show(_ title: Swift.String, doneButtonTitle: Swift.String = "Done", cancelButtonTitle: Swift.String = "Cancel", defaultDate: Foundation.Date = Date(), minimumDate: Foundation.Date? = nil, maximumDate: Foundation.Date? = nil, datePickerMode: UIKit.UIDatePicker.Mode = .dateAndTime, callback: @escaping DoconlineTestFramework.DatePickerDialog.DatePickerCallback)
+  @objc deinit
+}
+public class SharedConfigCallmanager {
+  public static let shared: DoconlineTestFramework.SharedConfigCallmanager
+  public init()
+  @objc deinit
+}
+public class AppConfig {
+  public init()
+  public func setupConfig()
+  public static var shared: DoconlineTestFramework.AppConfig?
+  public var appConfigRef: DoconlineTestFramework.AppConfig?
+  public var callRefreshTimer: Foundation.Timer?
+  public var currentCallUUID: Foundation.UUID?
+  public var callBackgroundHandlerIdentifier: UIKit.UIBackgroundTaskIdentifier?
+  public var fcmToken: Swift.String
+  public var bearerType: Swift.String
+  public var accesstoken: Swift.String
+  public var notificationData: [Swift.AnyHashable : Any]
+  public var appConfigwindow: UIKit.UIWindow?
+  public var fcm_Token: Swift.String {
+    get
+    set
+  }
+  public var bearer_type: Swift.String {
+    get
+    set
+  }
+  public var access_token: Swift.String {
+    get
+    set
+  }
+  public var currentUUID: Foundation.UUID? {
+    get
+    set
+  }
+  public var callSession_Id: Swift.String {
+    get
+    set
+  }
+  public var call_DoctorModel: DoconlineTestFramework.Doctor {
+    get
+    set
+  }
+  public var tokenId: Swift.String {
+    get
+    set
+  }
+  public var incomingCall_Type: Swift.Int {
+    get
+    set
+  }
+  public var incomingNotification_Type: Swift.String {
+    get
+    set
+  }
+  public var isCallingView_Presenting: Swift.Bool {
+    get
+    set
+  }
+  public func didReceiveEndChatNotification(threadID: Swift.String, closedBy: Swift.String)
+  public func didReceiveAppointmentBookNotification(threadID: Swift.String, closedBy: Swift.String)
+  public func didUpdatePushRegistry(pushCredentials: PushKit.PKPushCredentials)
+  public func didUpdateFcmPushRegistry(pushCredentials: PushKit.PKPushCredentials)
+  public func didReceiveIncomingPush(didReceiveIncomingPushWith payload: PushKit.PKPushPayload, voipPushPayload voipPayload: [Swift.AnyHashable : Any])
+  public func fetchNotificationData(userInfo: [Swift.AnyHashable : Any])
+  public func notifiationErrorHandling(userInfo: [Swift.AnyHashable : Any])
+  @objc deinit
+}
+public protocol DayViewDelegate : AnyObject {
+  func dayViewDidSelectEventView(_ eventView: DoconlineTestFramework.EventView)
+  func dayViewDidLongPressEventView(_ eventView: DoconlineTestFramework.EventView)
+  func dayViewDidLongPressTimelineAtHour(_ hour: Swift.Int)
+  func dayView(dayView: DoconlineTestFramework.DayView, willMoveTo date: Foundation.Date)
+  func dayView(dayView: DoconlineTestFramework.DayView, didMoveTo date: Foundation.Date)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DayView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var dataSource: (any DoconlineTestFramework.EventDataSource)? {
+    get
+    set(value)
+  }
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any DoconlineTestFramework.DayViewDelegate)?
+  @_Concurrency.MainActor(unsafe) public var isHeaderViewVisible: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var timelineScrollOffset: CoreFoundation.CGPoint {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var autoScrollToFirstEvent: Swift.Bool {
+    get
+    set(value)
+  }
+  @_Concurrency.MainActor(unsafe) public var state: DoconlineTestFramework.DayViewState? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(state: DoconlineTestFramework.DayViewState)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func updateStyle(_ newStyle: DoconlineTestFramework.CalendarStyle)
+  @_Concurrency.MainActor(unsafe) public func timelinePanGestureRequire(toFail gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) public func scrollTo(hour24: Swift.Float)
+  @_Concurrency.MainActor(unsafe) public func scrollToFirstEventIfNeeded()
+  @_Concurrency.MainActor(unsafe) public func reloadData()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func transitionToHorizontalSizeClass(_ sizeClass: UIKit.UIUserInterfaceSizeClass)
+  @objc deinit
+}
+extension DoconlineTestFramework.DayView : DoconlineTestFramework.EventViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func eventViewDidTap(_ eventView: DoconlineTestFramework.EventView)
+  @_Concurrency.MainActor(unsafe) public func eventViewDidLongPress(_ eventview: DoconlineTestFramework.EventView)
+}
+extension DoconlineTestFramework.DayView : DoconlineTestFramework.TimelinePagerViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func timelinePagerDidSelectEventView(_ eventView: DoconlineTestFramework.EventView)
+  @_Concurrency.MainActor(unsafe) public func timelinePagerDidLongPressEventView(_ eventView: DoconlineTestFramework.EventView)
+  @_Concurrency.MainActor(unsafe) public func timelinePagerDidLongPressTimelineAtHour(_ hour: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func timelinePager(timelinePager: DoconlineTestFramework.TimelinePagerView, willMoveTo date: Foundation.Date)
+  @_Concurrency.MainActor(unsafe) public func timelinePager(timelinePager: DoconlineTestFramework.TimelinePagerView, didMoveTo date: Foundation.Date)
+}
+extension DoconlineTestFramework.DayView : DoconlineTestFramework.TimelineViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func timelineView(_ timelineView: DoconlineTestFramework.TimelineView, didLongPressAt hour: Swift.Int)
+}
+public struct PDFDocument {
+  public let pageCount: Swift.Int
+  public let fileName: Swift.String
+  public init?(url: Foundation.URL, password: Swift.String? = nil)
+  public init?(fileData: Foundation.Data, fileName: Swift.String, password: Swift.String? = nil)
+}
+@objc public class IQInvocation : ObjectiveC.NSObject {
+  @objc weak public var target: Swift.AnyObject?
+  @objc public var action: ObjectiveC.Selector
+  @objc public init(_ target: Swift.AnyObject, _ action: ObjectiveC.Selector)
+  @objc public func invoke(from: Any)
+  @objc deinit
+}
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func viewContainingController() -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func topMostController() -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func parentContainerViewController() -> UIKit.UIViewController?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func superviewOfClassType(_ classType: UIKit.UIView.Type, belowView: UIKit.UIView? = nil) -> UIKit.UIView?
+}
+@IBDesignable extension UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var borderWidthForView: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var borderColorForView: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+}
+public protocol BSImagePickerSettings {
+  var maxNumberOfSelections: Swift.Int { get set }
+  var selectionCharacter: Swift.Character? { get set }
+  var selectionFillColor: UIKit.UIColor { get set }
+  var selectionStrokeColor: UIKit.UIColor { get set }
+  var selectionShadowColor: UIKit.UIColor { get set }
+  var selectionTextAttributes: [Foundation.NSAttributedString.Key : Swift.AnyObject] { get set }
+  var backgroundColor: UIKit.UIColor { get set }
+  var cellsPerRow: (_ verticalSize: UIKit.UIUserInterfaceSizeClass, _ horizontalSize: UIKit.UIUserInterfaceSizeClass) -> Swift.Int { get set }
+  var takePhotos: Swift.Bool { get set }
+  var takePhotoIcon: UIKit.UIImage? { get set }
+}
+@_inheritsConvenienceInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) public class JJFloatingActionButton : UIKit.UIControl {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any DoconlineTestFramework.JJFloatingActionButtonDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var items: [DoconlineTestFramework.JJActionItem] {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedButtonColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var buttonImageSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImageColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonDiameter: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var itemSizeRatio: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var buttonAnimationConfiguration: DoconlineTestFramework.JJButtonAnimationConfiguration
+  @_Concurrency.MainActor(unsafe) public var itemAnimationConfiguration: DoconlineTestFramework.JJItemAnimationConfiguration
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var handleSingleActionDirectly: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var closeAutomatically: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var buttonState: DoconlineTestFramework.JJFloatingActionButtonState {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var circleView: DoconlineTestFramework.JJCircleView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var overlayView: UIKit.UIControl {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage, action: ((DoconlineTestFramework.JJActionItem) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc extension DoconlineTestFramework.JJFloatingActionButton {
+  @objc @discardableResult
+  @_Concurrency.MainActor(unsafe) dynamic public func addItem(title: Swift.String? = nil, image: UIKit.UIImage? = nil, action: ((DoconlineTestFramework.JJActionItem) -> Swift.Void)? = nil) -> DoconlineTestFramework.JJActionItem
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addItem(_ item: DoconlineTestFramework.JJActionItem)
+  @objc @discardableResult
+  @_Concurrency.MainActor(unsafe) dynamic public func removeItem(_ item: DoconlineTestFramework.JJActionItem) -> DoconlineTestFramework.JJActionItem?
+  @objc @discardableResult
+  @_Concurrency.MainActor(unsafe) dynamic public func removeItem(at index: Swift.Int) -> DoconlineTestFramework.JJActionItem
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func configureDefaultItem(_ body: ((DoconlineTestFramework.JJActionItem) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var enabledItems: [DoconlineTestFramework.JJActionItem] {
+    @objc get
+  }
+}
+extension DoconlineTestFramework.JJFloatingActionButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension DoconlineTestFramework.JJFloatingActionButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func updateConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+}
+public struct ParallaxAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public var speed: CoreFoundation.CGFloat
+  public init(speed: CoreFoundation.CGFloat = 0.5)
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class IQKeyboardManager : ObjectiveC.NSObject, UIKit.UIGestureRecognizerDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public var enable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var keyboardDistanceFromTextField: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var keyboardShowing: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var movedDistance: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var movedDistanceChanged: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) public static let shared: DoconlineTestFramework.IQKeyboardManager
+  @objc @_Concurrency.MainActor(unsafe) public var enableAutoToolbar: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarManageBehaviour: DoconlineTestFramework.IQAutoToolbarManageBehaviour
+  @objc @_Concurrency.MainActor(unsafe) public var shouldToolbarUsesTextFieldTintColor: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarTintColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarBarTintColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var previousNextDisplayMode: DoconlineTestFramework.IQPreviousNextDisplayMode
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarPreviousBarButtonItemImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarNextBarButtonItemImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarDoneBarButtonItemImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarPreviousBarButtonItemText: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarPreviousBarButtonItemAccessibilityLabel: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarNextBarButtonItemText: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarNextBarButtonItemAccessibilityLabel: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarDoneBarButtonItemText: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarDoneBarButtonItemAccessibilityLabel: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public var shouldShowToolbarPlaceholder: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var placeholderFont: UIKit.UIFont?
+  @objc @_Concurrency.MainActor(unsafe) public var placeholderColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var placeholderButtonColor: UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) public var overrideKeyboardAppearance: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var keyboardAppearance: UIKit.UIKeyboardAppearance
+  @objc @_Concurrency.MainActor(unsafe) public var shouldResignOnTouchOutside: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var resignFirstResponderGesture: UIKit.UITapGestureRecognizer {
+    @objc get
+    @objc set
+  }
+  @discardableResult
+  @objc @_Concurrency.MainActor(unsafe) public func resignFirstResponder() -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var canGoPrevious: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var canGoNext: Swift.Bool {
+    @objc get
+  }
+  @discardableResult
+  @objc @_Concurrency.MainActor(unsafe) public func goPrevious() -> Swift.Bool
+  @discardableResult
+  @objc @_Concurrency.MainActor(unsafe) public func goNext() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var shouldPlayInputClicks: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var layoutIfNeededOnUpdate: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var disabledDistanceHandlingClasses: [UIKit.UIViewController.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var enabledDistanceHandlingClasses: [UIKit.UIViewController.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var disabledToolbarClasses: [UIKit.UIViewController.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var enabledToolbarClasses: [UIKit.UIViewController.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var toolbarPreviousNextAllowedClasses: [UIKit.UIView.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var disabledTouchResignedClasses: [UIKit.UIViewController.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var enabledTouchResignedClasses: [UIKit.UIViewController.Type]
+  @objc @_Concurrency.MainActor(unsafe) public var touchResignedGestureIgnoreClasses: [UIKit.UIView.Type]
+  @objc @_Concurrency.MainActor(unsafe) public func registerTextFieldViewClass(_ aClass: UIKit.UIView.Type, didBeginEditingNotificationName: Swift.String, didEndEditingNotificationName: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func unregisterTextFieldViewClass(_ aClass: UIKit.UIView.Type, didBeginEditingNotificationName: Swift.String, didEndEditingNotificationName: Swift.String)
+  @objc deinit
+  @objc @_Concurrency.MainActor(unsafe) public func reloadLayoutIfNeeded()
+  @objc @_Concurrency.MainActor(unsafe) public func reloadInputViews()
+  @objc @_Concurrency.MainActor(unsafe) public var enableDebugging: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public func registerAllNotifications()
+  @objc @_Concurrency.MainActor(unsafe) public func unregisterAllNotifications()
+}
+public struct CrossFadeAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public init()
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class IQTitleBarButtonItem : DoconlineTestFramework.IQBarButtonItem {
+  @objc @_Concurrency.MainActor(unsafe) open var titleFont: UIKit.UIFont? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var titleColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var selectableTitleColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override open var invocation: DoconlineTestFramework.IQInvocation? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(title: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DayViewController : UIKit.UIViewController, DoconlineTestFramework.EventDataSource, DoconlineTestFramework.DayViewDelegate {
+  @_Concurrency.MainActor(unsafe) public var dayView: DoconlineTestFramework.DayView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willTransition(to newCollection: UIKit.UITraitCollection, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) open func reloadData()
+  @_Concurrency.MainActor(unsafe) open func updateStyle(_ newStyle: DoconlineTestFramework.CalendarStyle)
+  @_Concurrency.MainActor(unsafe) open func eventsForDate(_ date: Foundation.Date) -> [any DoconlineTestFramework.EventDescriptor]
+  @_Concurrency.MainActor(unsafe) open func dayViewDidSelectEventView(_ eventView: DoconlineTestFramework.EventView)
+  @_Concurrency.MainActor(unsafe) open func dayViewDidLongPressEventView(_ eventView: DoconlineTestFramework.EventView)
+  @_Concurrency.MainActor(unsafe) open func dayViewDidLongPressTimelineAtHour(_ hour: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func dayView(dayView: DoconlineTestFramework.DayView, willMoveTo date: Foundation.Date)
+  @_Concurrency.MainActor(unsafe) open func dayView(dayView: DoconlineTestFramework.DayView, didMoveTo date: Foundation.Date)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public class Doctor : Swift.Codable {
+  public var id: Swift.Int!
+  public var first_name: Swift.String!
+  public var prefix: Swift.String!
+  public var middle_name: Swift.String!
+  public var last_name: Swift.String!
+  public var practitionerNumber: Swift.Int!
+  public var avatar_url: Swift.String!
+  public var appointment_id: Swift.String!
+  public var full_name: Swift.String!
+  public var specialisation: Swift.String!
+  public var ratings: Swift.Double!
+  public var email: Swift.String?
+  public var userName: Swift.String?
+  public var mobileNo: Swift.String?
+  public var uidNo: Swift.String?
+  public var specializationId: Swift.Int?
+  public var internalRating: Swift.Int?
+  public var isVerified: Swift.Int?
+  public var isActive: Swift.Int?
+  public var activationToken: Swift.String?
+  public var createdAt: Swift.String?
+  public var updatedAt: Swift.String?
+  public var doctorPractitionerNumber: Swift.String?
+  public var mciCode: Swift.String?
+  public var qualification: Swift.String?
+  public init()
+  public init(prefix: Swift.String, id: Swift.Int, first_name: Swift.String, middle_name: Swift.String, last_name: Swift.String, practitioner_number: Swift.Int, avatar_url: Swift.String)
+  public init(prefix: Swift.String, id: Swift.Int, first_name: Swift.String, middle_name: Swift.String, last_name: Swift.String, practitioner_number: Swift.Int, avatar_url: Swift.String, fullname: Swift.String, specialization: Swift.String, rating: Swift.Double)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public protocol QrScannerDelegate {
+  func getScannedData(data: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QRScannerController : UIKit.UIViewController, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+  @_Concurrency.MainActor(unsafe) public var qrCodeFrameView: UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) public var qrScannerDelegate: (any DoconlineTestFramework.QrScannerDelegate)!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc public func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NetworkUtilities {
+  @objc deinit
+}
+public protocol LayoutAttributesAnimator {
+  func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+public class EventLayoutAttributes {
+  final public let descriptor: any DoconlineTestFramework.EventDescriptor
+  public var frame: CoreFoundation.CGRect
+  public init(_ descriptor: any DoconlineTestFramework.EventDescriptor)
+  @objc deinit
+}
+@objc public protocol JJFloatingActionButtonDelegate {
+  @objc optional func floatingActionButtonWillOpen(_ button: DoconlineTestFramework.JJFloatingActionButton)
+  @objc optional func floatingActionButtonDidOpen(_ button: DoconlineTestFramework.JJFloatingActionButton)
+  @objc optional func floatingActionButtonWillClose(_ button: DoconlineTestFramework.JJFloatingActionButton)
+  @objc optional func floatingActionButtonDidClose(_ button: DoconlineTestFramework.JJFloatingActionButton)
+}
+public protocol EventViewDelegate : AnyObject {
+  func eventViewDidTap(_ eventView: DoconlineTestFramework.EventView)
+  func eventViewDidLongPress(_ eventview: DoconlineTestFramework.EventView)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class EventView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var descriptor: (any DoconlineTestFramework.EventDescriptor)?
+  @_Concurrency.MainActor(unsafe) public var color: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+public struct OAuth2Error : Swift.Error {
+  public var localizedTitle: Swift.String
+  public var localizedDescription: Swift.String
+  public var statusCode: Swift.Int
+  public init(localizedTitle: Swift.String? = nil, localizedDescription: Swift.String)
+  public init(localizedTitle: Swift.String? = nil, localizedDescription: Swift.String, statusCode: Swift.Int)
+}
+public enum Model : Swift.String {
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPad5, iPad6, iPad7, iPad8, iPad9, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, unrecognized
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var type: DoconlineTestFramework.Model {
+    get
+  }
+}
+final public class ActivityData {
+  public init(size: CoreFoundation.CGSize? = nil, message: Swift.String? = nil, messageFont: UIKit.UIFont? = nil, messageSpacing: CoreFoundation.CGFloat? = nil, type: DoconlineTestFramework.NVActivityIndicatorType? = nil, color: UIKit.UIColor? = nil, padding: CoreFoundation.CGFloat? = nil, displayTimeThreshold: Swift.Int? = nil, minimumDisplayTime: Swift.Int? = nil, backgroundColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class NVActivityIndicatorPresenter {
+  public static let sharedInstance: DoconlineTestFramework.NVActivityIndicatorPresenter
+  final public var isAnimating: Swift.Bool {
+    get
+  }
+  final public func startAnimating(_ data: DoconlineTestFramework.ActivityData, _ fadeInAnimation: DoconlineTestFramework.FadeInAnimation? = nil)
+  final public func stopAnimating(_ fadeOutAnimation: DoconlineTestFramework.FadeOutAnimation? = nil)
+  final public func setMessage(_ message: Swift.String?)
+  @objc deinit
+}
+@objc public protocol FlexibleSteppedProgressBarDelegate {
+  @objc optional func progressBar(_ progressBar: DoconlineTestFramework.FlexibleSteppedProgressBar, willSelectItemAtIndex index: Swift.Int)
+  @objc optional func progressBar(_ progressBar: DoconlineTestFramework.FlexibleSteppedProgressBar, didSelectItemAtIndex index: Swift.Int)
+  @objc optional func progressBar(_ progressBar: DoconlineTestFramework.FlexibleSteppedProgressBar, canSelectItemAtIndex index: Swift.Int) -> Swift.Bool
+  @objc optional func progressBar(_ progressBar: DoconlineTestFramework.FlexibleSteppedProgressBar, textAtIndex index: Swift.Int, position: DoconlineTestFramework.FlexibleSteppedProgressBarTextLocation) -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class FlexibleSteppedProgressBar : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var numberOfPoints: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var currentIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var completedTillIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var currentSelectedCenterColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var currentSelectedTextColor: UIKit.UIColor!
+  @_Concurrency.MainActor(unsafe) open var viewBackgroundColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var selectedOuterCircleStrokeColor: UIKit.UIColor!
+  @_Concurrency.MainActor(unsafe) open var lastStateOuterCircleStrokeColor: UIKit.UIColor!
+  @_Concurrency.MainActor(unsafe) open var lastStateCenterColor: UIKit.UIColor!
+  @_Concurrency.MainActor(unsafe) open var centerLayerTextColor: UIKit.UIColor!
+  @_Concurrency.MainActor(unsafe) open var centerLayerDarkBackgroundTextColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var useLastState: Swift.Bool {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var lineHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedOuterCircleLineWidth: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var lastStateOuterCircleLineWidth: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var textDistance: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var radius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var progressRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var progressLineHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var stepAnimationDuration: Swift.Double
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var displayStepText: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var stepTextFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var stepTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var backgroundShapeColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var selectedBackgoundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) weak open var delegate: (any DoconlineTestFramework.FlexibleSteppedProgressBarDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @objc deinit
+}
+open class Event : DoconlineTestFramework.EventDescriptor {
+  public var startDate: Foundation.Date
+  public var endDate: Foundation.Date
+  public var isAllDay: Swift.Bool
+  public var text: Swift.String
+  public var attributedText: Foundation.NSAttributedString?
+  public var color: UIKit.UIColor {
+    get
+    set
+  }
+  public var backgroundColor: UIKit.UIColor
+  public var textColor: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public var userInfo: Any?
+  public init()
+  @objc deinit
+}
+extension DoconlineTestFramework.JJFloatingActionButton {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowOffset: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowOpacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class IQPreviousNextView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum StarFillMode : Swift.Int {
+  case full
+  case half
+  case precise
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct CosmosSettings {
+  public static var `default`: DoconlineTestFramework.CosmosSettings {
+    get
+  }
+  public init()
+  public var emptyBorderColor: UIKit.UIColor
+  public var emptyBorderWidth: Swift.Double
+  public var filledBorderColor: UIKit.UIColor
+  public var filledBorderWidth: Swift.Double
+  public var emptyColor: UIKit.UIColor
+  public var filledColor: UIKit.UIColor
+  public var fillMode: DoconlineTestFramework.StarFillMode
+  public var starMargin: Swift.Double
+  public var starPoints: [CoreFoundation.CGPoint]
+  public var starSize: Swift.Double
+  public var totalStars: Swift.Int
+  public var filledImage: UIKit.UIImage?
+  public var emptyImage: UIKit.UIImage?
+  public var textColor: UIKit.UIColor
+  public var textFont: UIKit.UIFont
+  public var textMargin: Swift.Double
+  public var minTouchRating: Swift.Double
+  public var updateOnTouch: Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class CosmosView : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var rating: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var settings: DoconlineTestFramework.CosmosSettings {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) convenience public init(settings: DoconlineTestFramework.CosmosSettings = .default)
+  @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, settings: DoconlineTestFramework.CosmosSettings)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func update()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func accessibilityIncrement()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func accessibilityDecrement()
+  @_Concurrency.MainActor(unsafe) open var didTouchCosmos: ((Swift.Double) -> ())?
+  @_Concurrency.MainActor(unsafe) open var didFinishTouchingCosmos: ((Swift.Double) -> ())?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class BSImagePickerViewController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) open var settings: any DoconlineTestFramework.BSImagePickerSettings
+  @objc @_Concurrency.MainActor(unsafe) open var doneButton: UIKit.UIBarButtonItem
+  @objc @_Concurrency.MainActor(unsafe) open var cancelButton: UIKit.UIBarButtonItem
+  @objc @_Concurrency.MainActor(unsafe) open var defaultSelections: Photos.PHFetchResult<Photos.PHAsset>?
+  @objc @_Concurrency.MainActor(unsafe) open var fetchResults: [Photos.PHFetchResult<Photos.PHAssetCollection>] {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @objc deinit
+}
+extension DoconlineTestFramework.BSImagePickerViewController : DoconlineTestFramework.BSImagePickerSettings {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var maxNumberOfSelections: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var selectionCharacter: Swift.Character? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionFillColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionStrokeColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionShadowColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionTextAttributes: [Foundation.NSAttributedString.Key : Swift.AnyObject] {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var backgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var cellsPerRow: (_ verticalSize: UIKit.UIUserInterfaceSizeClass, _ horizontalSize: UIKit.UIUserInterfaceSizeClass) -> Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var takePhotos: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var takePhotoIcon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+}
+extension DoconlineTestFramework.BSImagePickerViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var albumButton: UIKit.UIButton {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) public class JJCircleView : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var color: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_: CoreFoundation.CGRect)
+  @objc deinit
+}
+public let kIQUseDefaultKeyboardDistance: CoreFoundation.CGFloat
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var keyboardDistanceFromTextField: CoreFoundation.CGFloat {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var ignoreSwitchingByNextPrevious: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var enableMode: DoconlineTestFramework.IQEnableMode {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var shouldResignOnTouchOutsideMode: DoconlineTestFramework.IQEnableMode {
+    @objc get
+    @objc set(newValue)
+  }
+}
+public struct RotateInOutAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public var minAlpha: CoreFoundation.CGFloat
+  public var maxRotate: CoreFoundation.CGFloat
+  public init(minAlpha: CoreFoundation.CGFloat = 0, maxRotate: CoreFoundation.CGFloat = .pi / 4)
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+public protocol TimelineViewDelegate : AnyObject {
+  func timelineView(_ timelineView: DoconlineTestFramework.TimelineView, didLongPressAt hour: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TimelineView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any DoconlineTestFramework.TimelineViewDelegate)?
+  @_Concurrency.MainActor(unsafe) weak public var eventViewDelegate: (any DoconlineTestFramework.EventViewDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var date: Foundation.Date {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var regularLayoutAttributes: [DoconlineTestFramework.EventLayoutAttributes] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var allDayLayoutAttributes: [DoconlineTestFramework.EventLayoutAttributes] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var layoutAttributes: [DoconlineTestFramework.EventLayoutAttributes] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var fullHeight: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func updateStyle(_ newStyle: DoconlineTestFramework.TimelineStyle)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+@objc extension DoconlineTestFramework.JJFloatingActionButton {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func open(animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func close(animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+}
+extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func bs_presentImagePickerController(_ imagePicker: DoconlineTestFramework.BSImagePickerViewController, animated: Swift.Bool, select: ((_ asset: Photos.PHAsset) -> Swift.Void)?, deselect: ((_ asset: Photos.PHAsset) -> Swift.Void)?, cancel: (([Photos.PHAsset]) -> Swift.Void)?, finish: (([Photos.PHAsset]) -> Swift.Void)?, completion: (() -> Swift.Void)?, selectLimitReached: ((Swift.Int) -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class MarqueeLabel : UIKit.UILabel, QuartzCore.CAAnimationDelegate {
+  public enum MarqueeType {
+    case left
+    case leftRight
+    case right
+    case rightLeft
+    case continuous
+    case continuousReverse
+    public static func == (a: DoconlineTestFramework.MarqueeLabel.MarqueeType, b: DoconlineTestFramework.MarqueeLabel.MarqueeType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) open var type: DoconlineTestFramework.MarqueeLabel.MarqueeType {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var scrollSequence: Swift.Array<any DoconlineTestFramework.MarqueeStep>?
+  @_Concurrency.MainActor(unsafe) open var animationCurve: UIKit.UIView.AnimationCurve
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var labelize: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var holdScrolling: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var tapToScroll: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var isPaused: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var awayFromHome: Swift.Bool {
+    get
+  }
+  public enum SpeedLimit {
+    case rate(CoreFoundation.CGFloat)
+    case duration(CoreFoundation.CGFloat)
+  }
+  @_Concurrency.MainActor(unsafe) open var speed: DoconlineTestFramework.MarqueeLabel.SpeedLimit {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var scrollDuration: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var scrollRate: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var leadingBuffer: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var trailingBuffer: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var fadeLength: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var animationDelay: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var animationDuration: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open class func restartLabelsOfController(_ controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) open class func controllerViewWillAppear(_ controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) open class func controllerViewDidAppear(_ controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) open class func controllerLabelsLabelize(_ controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) open class func controllerLabelsAnimate(_ controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, rate: CoreFoundation.CGFloat, fadeLength fade: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, duration: CoreFoundation.CGFloat, fadeLength fade: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc convenience override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @available(iOS 8.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func sizeThatFits(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) open func labelShouldScroll() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
+  @objc @_Concurrency.MainActor(unsafe) public func restartForViewController(_ notification: Foundation.Notification)
+  @objc @_Concurrency.MainActor(unsafe) public func labelizeForController(_ notification: Foundation.Notification)
+  @objc @_Concurrency.MainActor(unsafe) public func animateForController(_ notification: Foundation.Notification)
+  @_Concurrency.MainActor(unsafe) public func triggerScrollStart()
+  @objc @_Concurrency.MainActor(unsafe) public func restartLabel()
+  @_Concurrency.MainActor(unsafe) public func resetLabel()
+  @objc @_Concurrency.MainActor(unsafe) public func shutdownLabel()
+  @_Concurrency.MainActor(unsafe) public func pauseLabel()
+  @_Concurrency.MainActor(unsafe) public func unpauseLabel()
+  @objc @_Concurrency.MainActor(unsafe) public func labelWasTapped(_ recognizer: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) open func labelWillBeginScroll()
+  @_Concurrency.MainActor(unsafe) open func labelReturnedToHome(_ finished: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func forBaselineLayout() -> UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var forLastBaselineLayout: UIKit.UIView {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shadowColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shadowOffset: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var highlightedTextColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var numberOfLines: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var adjustsFontSizeToFitWidth: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var minimumScaleFactor: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var baselineAdjustment: UIKit.UIBaselineAdjustment {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var tintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tintColorDidChange()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isAccessibilityElement: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+public protocol MarqueeStep {
+  var timeStep: CoreFoundation.CGFloat { get }
+  var timingFunction: UIKit.UIView.AnimationCurve { get }
+  var edgeFades: DoconlineTestFramework.EdgeFade { get }
+}
+public struct ScrollStep : DoconlineTestFramework.MarqueeStep {
+  public enum Position {
+    case home
+    case away
+    case partial(CoreFoundation.CGFloat)
+  }
+  public let timeStep: CoreFoundation.CGFloat
+  public let timingFunction: UIKit.UIView.AnimationCurve
+  public let position: DoconlineTestFramework.ScrollStep.Position
+  public let edgeFades: DoconlineTestFramework.EdgeFade
+  public init(timeStep: CoreFoundation.CGFloat, timingFunction: UIKit.UIView.AnimationCurve = .linear, position: DoconlineTestFramework.ScrollStep.Position, edgeFades: DoconlineTestFramework.EdgeFade)
+}
+public struct FadeStep : DoconlineTestFramework.MarqueeStep {
+  public let timeStep: CoreFoundation.CGFloat
+  public let timingFunction: UIKit.UIView.AnimationCurve
+  public let edgeFades: DoconlineTestFramework.EdgeFade
+  public init(timeStep: CoreFoundation.CGFloat, timingFunction: UIKit.UIView.AnimationCurve = .linear, edgeFades: DoconlineTestFramework.EdgeFade)
+}
+public struct EdgeFade : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public static let leading: DoconlineTestFramework.EdgeFade
+  public static let trailing: DoconlineTestFramework.EdgeFade
+  public init(rawValue: Swift.Int)
+  public typealias ArrayLiteralElement = DoconlineTestFramework.EdgeFade
+  public typealias Element = DoconlineTestFramework.EdgeFade
+  public typealias RawValue = Swift.Int
+}
+public struct CubeAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public var perspective: CoreFoundation.CGFloat
+  public var totalAngle: CoreFoundation.CGFloat
+  public init(perspective: CoreFoundation.CGFloat = -1 / 500, totalAngle: CoreFoundation.CGFloat = .pi / 2)
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MenuContainerViewController : DoconlineTestFramework.LGSideMenuController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public var fcmToken: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func leftViewWillLayoutSubviews(with size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController?, leftViewController: UIKit.UIViewController?, rightViewController: UIKit.UIViewController?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootView: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootView: UIKit.UIView?, leftView: UIKit.UIView?, rightView: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum ReachabilityError : Swift.Error {
+  case FailedToCreateWithAddress(Darwin.sockaddr_in)
+  case FailedToCreateWithHostname(Swift.String)
+  case UnableToSetCallback
+  case UnableToSetDispatchQueue
+}
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+public class Reachability {
+  public typealias NetworkReachable = (DoconlineTestFramework.Reachability) -> ()
+  public typealias NetworkUnreachable = (DoconlineTestFramework.Reachability) -> ()
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: DoconlineTestFramework.Reachability.NetworkStatus, b: DoconlineTestFramework.Reachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: DoconlineTestFramework.Reachability.NetworkReachable?
+  public var whenUnreachable: DoconlineTestFramework.Reachability.NetworkUnreachable?
+  public var reachableOnWWAN: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  public var currentReachabilityStatus: DoconlineTestFramework.Reachability.NetworkStatus {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability)
+  convenience public init?(hostname: Swift.String)
+  convenience public init?()
+  @objc deinit
+}
+extension DoconlineTestFramework.Reachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  public var isReachable: Swift.Bool {
+    get
+  }
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol EventDescriptor {
+  var startDate: Foundation.Date { get }
+  var endDate: Foundation.Date { get }
+  var isAllDay: Swift.Bool { get }
+  var text: Swift.String { get }
+  var attributedText: Foundation.NSAttributedString? { get }
+  var font: UIKit.UIFont { get }
+  var color: UIKit.UIColor { get }
+  var textColor: UIKit.UIColor { get }
+  var backgroundColor: UIKit.UIColor { get }
+}
+public enum NVActivityIndicatorType : Swift.CaseIterable {
+  case blank
+  case ballPulse
+  case ballGridPulse
+  case ballClipRotate
+  case squareSpin
+  case ballClipRotatePulse
+  case ballClipRotateMultiple
+  case ballPulseRise
+  case ballRotate
+  case cubeTransition
+  case ballZigZag
+  case ballZigZagDeflect
+  case ballTrianglePath
+  case ballScale
+  case lineScale
+  case lineScaleParty
+  case ballScaleMultiple
+  case ballPulseSync
+  case ballBeat
+  case ballDoubleBounce
+  case lineScalePulseOut
+  case lineScalePulseOutRapid
+  case ballScaleRipple
+  case ballScaleRippleMultiple
+  case ballSpinFadeLoader
+  case lineSpinFadeLoader
+  case triangleSkewSpin
+  case pacman
+  case ballGridBeat
+  case semiCircleSpin
+  case ballRotateChase
+  case orbit
+  case audioEqualizer
+  case circleStrokeSpin
+  public static func == (a: DoconlineTestFramework.NVActivityIndicatorType, b: DoconlineTestFramework.NVActivityIndicatorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [DoconlineTestFramework.NVActivityIndicatorType]
+  public static var allCases: [DoconlineTestFramework.NVActivityIndicatorType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias FadeInAnimation = (UIKit.UIView) -> Swift.Void
+public typealias FadeOutAnimation = (UIKit.UIView, @escaping () -> Swift.Void) -> Swift.Void
+@objc @_Concurrency.MainActor(unsafe) final public class NVActivityIndicatorView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_TYPE: DoconlineTestFramework.NVActivityIndicatorType
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_COLOR: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_TEXT_COLOR: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_PADDING: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_SIZE: CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD: Swift.Int
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_MINIMUM_DISPLAY_TIME: Swift.Int
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_MESSAGE: Swift.String?
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_MESSAGE_SPACING: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_MESSAGE_FONT: UIKit.UIFont
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_BLOCKER_BACKGROUND_COLOR: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_FADE_IN_ANIMATION: (_ view: UIKit.UIView) -> Swift.Void
+  @_Concurrency.MainActor(unsafe) public static var DEFAULT_FADE_OUT_ANIMATION: (_ view: UIKit.UIView, _ complete: @escaping () -> Swift.Void) -> Swift.Void
+  @_Concurrency.MainActor(unsafe) final public var type: DoconlineTestFramework.NVActivityIndicatorType
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var color: UIKit.UIColor
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) final public var padding: CoreFoundation.CGFloat
+  @available(*, deprecated)
+  @_Concurrency.MainActor(unsafe) final public var animating: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var isAnimating: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, type: DoconlineTestFramework.NVActivityIndicatorType? = nil, color: UIKit.UIColor? = nil, padding: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var bounds: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) final public func startAnimating()
+  @_Concurrency.MainActor(unsafe) final public func stopAnimating()
+  @objc deinit
+}
+@objc extension UIKit.UIScrollView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var shouldIgnoreScrollingAdjustment: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var shouldIgnoreContentInsetAdjustment: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var shouldRestoreScrollViewContentOffset: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+}
+public class CalendarManager {
+  public var eventStore: EventKit.EKEventStore
+  public var calendarName: Swift.String
+  public var calendar: EventKit.EKCalendar? {
+    get
+  }
+  public static let shared: DoconlineTestFramework.CalendarManager
+  public init(calendarName: Swift.String = Bundle(identifier: "com.doconline.framework.DoconlineTestFramework")?.infoDictionary![kCFBundleNameKey as String] as! String)
+  public func requestAuthorization(completion: @escaping (_ allowed: Swift.Bool) -> ())
+  public func addCalendar(commit: Swift.Bool = true, completion: ((_ error: Foundation.NSError?) -> ())? = nil)
+  public func removeCalendar(commit: Swift.Bool = true, completion: ((_ error: Foundation.NSError?) -> ())? = nil)
+  public func createEvent(completion: ((_ event: EventKit.EKEvent?) -> Swift.Void)?)
+  public func saveEvent(event: EventKit.EKEvent, span: EventKit.EKSpan = .thisEvent, completion: ((_ error: Foundation.NSError?) -> Swift.Void)? = nil)
+  public func removeEvent(eventId: Swift.String, completion: ((_ error: Foundation.NSError?) -> ())? = nil)
+  public func removeAllEvents(filter: ((EventKit.EKEvent) -> Swift.Bool)? = nil, completion: ((_ error: Foundation.NSError?) -> ())? = nil)
+  public func getAllEvents(completion: ((_ error: Foundation.NSError?, _ events: [EventKit.EKEvent]?) -> ())?)
+  public func getEvents(startDate: Foundation.Date, endDate: Foundation.Date, completion: ((_ error: Foundation.NSError?, _ events: [EventKit.EKEvent]?) -> ())?)
+  public func getEvent(eventId: Swift.String, completion: ((_ error: Foundation.NSError?, _ event: EventKit.EKEvent?) -> ())?)
+  public func commit() -> Swift.Bool
+  public func reset()
+  @objc deinit
+}
+@objc extension DoconlineTestFramework.JJFloatingActionButton {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func display(inView superview: UIKit.UIView, bottomInset: CoreFoundation.CGFloat = 16, trailingInset: CoreFoundation.CGFloat = 16, safeAreaInset: CoreFoundation.CGFloat = 0)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func display(inViewController viewController: UIKit.UIViewController, bottomInset: CoreFoundation.CGFloat = 16, trailingInset: CoreFoundation.CGFloat = 16, safeAreaInset: CoreFoundation.CGFloat = 0)
+}
+public typealias ArchiveCompletionHandler = (_ webarchiveData: Foundation.Data?, _ metaData: [Swift.String : Swift.String?]?, _ error: DoconlineTestFramework.ArchiveErrorType?) -> ()
+public typealias FetchResourcePathCompletionHandler = (_ data: Foundation.Data?, _ metaData: [Swift.String : Swift.String?]?, _ resources: [Swift.String]?, _ error: DoconlineTestFramework.ArchiveErrorType?) -> ()
+public enum ArchiveErrorType : Swift.Error {
+  case fetchHTMLError
+  case htmlInvalid
+  case failToInitHTMLDocument
+  case fetchResourceFailed
+  case plistSerializeFailed
+  public static func == (a: DoconlineTestFramework.ArchiveErrorType, b: DoconlineTestFramework.ArchiveErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public let ArchivedWebpageMetaKeyTitle: Swift.String
+public struct ResourceFetchOptions : Swift.OptionSet {
+  public var rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static var FetchImage: DoconlineTestFramework.ResourceFetchOptions
+  public static var FetchJs: DoconlineTestFramework.ResourceFetchOptions
+  public static var FetchCss: DoconlineTestFramework.ResourceFetchOptions
+  public typealias ArrayLiteralElement = DoconlineTestFramework.ResourceFetchOptions
+  public typealias Element = DoconlineTestFramework.ResourceFetchOptions
+  public typealias RawValue = Swift.UInt
+}
+@_hasMissingDesignatedInitializers open class Archiver {
+  public static var logEnabled: Swift.Bool
+  public static func archiveWebpageFormUrl(_ url: Foundation.URL, completionHandler: @escaping DoconlineTestFramework.ArchiveCompletionHandler)
+  public static func logHTMLResources(fromUrl url: Foundation.URL)
+  public static func resourcePathsFromUrl(_ url: Foundation.URL, fetchOptions: DoconlineTestFramework.ResourceFetchOptions, completionHandler: @escaping DoconlineTestFramework.FetchResourcePathCompletionHandler)
+  @objc deinit
+}
+extension Foundation.NSDictionary {
+  public func ba_description() -> Swift.String
+  public func ba_description(_ depth: Swift.Int) -> Swift.String
+}
+extension Foundation.NSArray {
+  public func ba_description() -> Swift.String
+  public func ba_description(_ depth: Swift.Int) -> Swift.String
+}
+extension Swift.String {
+  public static func ba_tabsWithCount(_ count: Swift.Int) -> Swift.String
+}
+@objc public enum IQAutoToolbarManageBehaviour : Swift.Int {
+  case bySubviews
+  case byTag
+  case byPosition
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum IQPreviousNextDisplayMode : Swift.Int {
+  case `default`
+  case alwaysHide
+  case alwaysShow
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum IQEnableMode : Swift.Int {
+  case `default`
+  case enabled
+  case disabled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol TimelinePagerViewDelegate : AnyObject {
+  func timelinePagerDidSelectEventView(_ eventView: DoconlineTestFramework.EventView)
+  func timelinePagerDidLongPressEventView(_ eventView: DoconlineTestFramework.EventView)
+  func timelinePagerDidLongPressTimelineAtHour(_ hour: Swift.Int)
+  func timelinePager(timelinePager: DoconlineTestFramework.TimelinePagerView, willMoveTo date: Foundation.Date)
+  func timelinePager(timelinePager: DoconlineTestFramework.TimelinePagerView, didMoveTo date: Foundation.Date)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TimelinePagerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var dataSource: (any DoconlineTestFramework.EventDataSource)?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any DoconlineTestFramework.TimelinePagerViewDelegate)?
+  @_Concurrency.MainActor(unsafe) public var timelineScrollOffset: CoreFoundation.CGPoint {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var autoScrollToFirstEvent: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func updateStyle(_ newStyle: DoconlineTestFramework.TimelineStyle)
+  @_Concurrency.MainActor(unsafe) public func timelinePanGestureRequire(toFail gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) public func scrollTo(hour24: Swift.Float)
+  @_Concurrency.MainActor(unsafe) public func reloadData()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension DoconlineTestFramework.TimelinePagerView : DoconlineTestFramework.DayViewStateUpdating {
+  @_Concurrency.MainActor(unsafe) public func move(from oldDate: Foundation.Date, to newDate: Foundation.Date)
+}
+extension DoconlineTestFramework.TimelinePagerView : DoconlineTestFramework.TimelineViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func timelineView(_ timelineView: DoconlineTestFramework.TimelineView, didLongPressAt hour: Swift.Int)
+}
+extension DoconlineTestFramework.TimelinePagerView : DoconlineTestFramework.EventViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func eventViewDidTap(_ eventView: DoconlineTestFramework.EventView)
+  @_Concurrency.MainActor(unsafe) public func eventViewDidLongPress(_ eventview: DoconlineTestFramework.EventView)
+}
+public enum EnvironmentType {
+  case debug(Swift.String, Swift.String, Swift.String)
+  case staging
+  case beta
+  case production
+  case demo
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DoconlineVC : UIKit.UIViewController, DoconlineTestFramework.NVActivityIndicatorViewable {
+  @_Concurrency.MainActor(unsafe) public var apvoip_token: Swift.String
+  @_Concurrency.MainActor(unsafe) public var accessToken: Swift.String
+  @_Concurrency.MainActor(unsafe) public var environment: DoconlineTestFramework.EnvironmentType
+  @_Concurrency.MainActor(unsafe) public var fcToken: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func getIncomingPushCreds(_ notification: Foundation.Notification)
+  @objc @_Concurrency.MainActor(unsafe) public func getIncomingFcmTokenSet(_ notification: Foundation.Notification)
+  @objc @_Concurrency.MainActor(unsafe) public func getIncomingPushPayload(_ notification: Foundation.Notification)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public enum JJActionItemTitlePosition : Swift.Int {
+  case leading
+  case trailing
+  case left
+  case right
+  case top
+  case bottom
+  case hidden
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct BarChartConfiguration {
+  public let animated: Swift.Bool
+  public let barWidth: CoreFoundation.CGFloat
+  public let spacing: CoreFoundation.CGFloat
+  public let isScrollEnabled: Swift.Bool
+  public init(animated: Swift.Bool, barWidth: CoreFoundation.CGFloat, spacing: CoreFoundation.CGFloat, isScrollEnabled: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AllDayView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var events: [any DoconlineTestFramework.EventDescriptor] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func scrollToBottom(animated: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func updateStyle(_ newStyle: DoconlineTestFramework.AllDayStyle)
+  @_Concurrency.MainActor(unsafe) public func reloadData()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AnimatedCollectionViewLayout : UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) open var animator: (any DoconlineTestFramework.LayoutAttributesAnimator)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open class var layoutAttributesClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AnimatedCollectionViewLayoutAttributes : UIKit.UICollectionViewLayoutAttributes {
+  @_Concurrency.MainActor(unsafe) public var contentView: UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) public var scrollDirection: UIKit.UICollectionView.ScrollDirection
+  @_Concurrency.MainActor(unsafe) public var startOffset: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var middleOffset: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var endOffset: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}
+public protocol DayViewStateUpdating : AnyObject {
+  func move(from oldDate: Foundation.Date, to newDate: Foundation.Date)
+}
+public class DayViewState {
+  public var selectedDate: Foundation.Date {
+    get
+  }
+  public init(date: Foundation.Date = Date())
+  public func move(to date: Foundation.Date)
+  public func client(client: any DoconlineTestFramework.DayViewStateUpdating, didMoveTo date: Foundation.Date)
+  public func subscribe(client: any DoconlineTestFramework.DayViewStateUpdating)
+  public func unsubscribe(client: any DoconlineTestFramework.DayViewStateUpdating)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CoreDataManager {
+  public static let shared: DoconlineTestFramework.CoreDataManager
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func shadowEffect(views: [UIKit.UIView])
+}
+@objc public enum FlexibleSteppedProgressBarTextLocation : Swift.Int {
+  case top
+  case bottom
+  case center
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class JJAnimationSettings : ObjectiveC.NSObject {
+  @objc public var duration: Swift.Double
+  @objc public var dampingRatio: CoreFoundation.CGFloat
+  @objc public var initialVelocity: CoreFoundation.CGFloat
+  @objc public var interItemDelay: Swift.Double
+  @objc convenience public init(duration: Foundation.TimeInterval = 0.3, dampingRatio: CoreFoundation.CGFloat = 0.55, initialVelocity: CoreFoundation.CGFloat = 0.3, interItemDelay: Foundation.TimeInterval = 0.1)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class JJButtonAnimationConfiguration : ObjectiveC.NSObject {
+  @objc public init(withStyle style: DoconlineTestFramework.JJButtonAnimationConfiguration.JJButtonAnimationStyle)
+  @objc public enum JJButtonAnimationStyle : Swift.Int {
+    case rotation
+    case transition
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public let style: DoconlineTestFramework.JJButtonAnimationConfiguration.JJButtonAnimationStyle
+  @objc public var angle: CoreFoundation.CGFloat
+  @objc public var image: UIKit.UIImage?
+  @objc public var opening: DoconlineTestFramework.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc public var closing: DoconlineTestFramework.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc extension DoconlineTestFramework.JJButtonAnimationConfiguration {
+  @objc public static func rotation(toAngle angle: CoreFoundation.CGFloat = -.pi / 4) -> DoconlineTestFramework.JJButtonAnimationConfiguration
+  @objc public static func transition(toImage image: UIKit.UIImage) -> DoconlineTestFramework.JJButtonAnimationConfiguration
+}
+@_inheritsConvenienceInitializers @objc public class JJItemAnimationConfiguration : ObjectiveC.NSObject {
+  @objc public var opening: DoconlineTestFramework.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc public var closing: DoconlineTestFramework.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc public var itemLayout: DoconlineTestFramework.JJItemLayout
+  @objc public var closedState: DoconlineTestFramework.JJItemPreparation
+  @objc public var openState: DoconlineTestFramework.JJItemPreparation
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension DoconlineTestFramework.JJItemAnimationConfiguration {
+  @objc public static func popUp(withInterItemSpacing interItemSpacing: CoreFoundation.CGFloat = 12, firstItemSpacing: CoreFoundation.CGFloat = 0) -> DoconlineTestFramework.JJItemAnimationConfiguration
+  @objc public static func slideIn(withInterItemSpacing interItemSpacing: CoreFoundation.CGFloat = 12, firstItemSpacing: CoreFoundation.CGFloat = 0) -> DoconlineTestFramework.JJItemAnimationConfiguration
+  @objc public static func circularPopUp(withRadius radius: CoreFoundation.CGFloat = 100) -> DoconlineTestFramework.JJItemAnimationConfiguration
+  @objc public static func circularSlideIn(withRadius radius: CoreFoundation.CGFloat = 100) -> DoconlineTestFramework.JJItemAnimationConfiguration
+}
+@objc public class JJItemLayout : ObjectiveC.NSObject {
+  @objc public var layout: (_ items: [DoconlineTestFramework.JJActionItem], _ actionButton: DoconlineTestFramework.JJFloatingActionButton) -> Swift.Void
+  @objc public init(layout: @escaping (_ items: [DoconlineTestFramework.JJActionItem], _ actionButton: DoconlineTestFramework.JJFloatingActionButton) -> Swift.Void)
+  @objc public static func verticalLine(withInterItemSpacing interItemSpacing: CoreFoundation.CGFloat = 12, firstItemSpacing: CoreFoundation.CGFloat = 0) -> DoconlineTestFramework.JJItemLayout
+  @objc public static func circular(withRadius radius: CoreFoundation.CGFloat = 100) -> DoconlineTestFramework.JJItemLayout
+  @objc deinit
+}
+@objc public class JJItemPreparation : ObjectiveC.NSObject {
+  @objc public var prepare: (_ item: DoconlineTestFramework.JJActionItem, _ index: Swift.Int, _ numberOfItems: Swift.Int, _ actionButton: DoconlineTestFramework.JJFloatingActionButton) -> Swift.Void
+  @objc public init(prepare: @escaping (_ item: DoconlineTestFramework.JJActionItem, _ index: Swift.Int, _ numberOfItems: Swift.Int, _ actionButton: DoconlineTestFramework.JJFloatingActionButton) -> Swift.Void)
+  @objc public static func identity() -> DoconlineTestFramework.JJItemPreparation
+  @objc public static func scale(by ratio: CoreFoundation.CGFloat = 0.4) -> DoconlineTestFramework.JJItemPreparation
+  @objc public static func offset(translationX: CoreFoundation.CGFloat, translationY: CoreFoundation.CGFloat, scale: CoreFoundation.CGFloat = 0.4) -> DoconlineTestFramework.JJItemPreparation
+  @objc public static func horizontalOffset(distance: CoreFoundation.CGFloat = 50, scale: CoreFoundation.CGFloat = 0.4) -> DoconlineTestFramework.JJItemPreparation
+  @objc public static func circularOffset(distance: CoreFoundation.CGFloat = 50, scale: CoreFoundation.CGFloat = 0.4) -> DoconlineTestFramework.JJItemPreparation
+  @objc deinit
+}
+open class OAuth2Configuration {
+  public var parameters: [Swift.String : Swift.String]
+  public var clientId: Swift.String {
+    get
+  }
+  public var clientSecret: Swift.String {
+    get
+  }
+  public var scope: Swift.String {
+    get
+  }
+  public var authURL: Swift.String {
+    get
+  }
+  public var tokenURL: Swift.String {
+    get
+  }
+  public var redirectURL: Swift.String {
+    get
+  }
+  public var responseType: Swift.String {
+    get
+  }
+  final public var preferredTitle: Swift.String
+  final public var preferredBarTintColor: UIKit.UIColor
+  final public var preferredTintColor: UIKit.UIColor
+  final public var preferredPresentationStyle: UIKit.UIModalPresentationStyle
+  public init(clientId: Swift.String, clientSecret: Swift.String, authURL: Swift.String, tokenURL: Swift.String, scope: Swift.String, redirectURL: Swift.String)
+  public init(clientId: Swift.String, authURL: Swift.String, tokenURL: Swift.String, scope: Swift.String, redirectURL: Swift.String, responseType: Swift.String)
+  public init(clientId: Swift.String, authURL: Swift.String, tokenURL: Swift.String, scope: Swift.String, redirectURL: Swift.String)
+  public init(clientId: Swift.String, authURL: Swift.String, tokenURL: Swift.String, redirectURL: Swift.String)
+  public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class BSImageView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var isUserInteractionEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var tintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension DoconlineTestFramework.BSImageView {
+  @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic open var image: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic open var highlightedImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var animationImages: [UIKit.UIImage]? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var highlightedAnimationImages: [UIKit.UIImage]? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var animationDuration: Foundation.TimeInterval {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var animationRepeatCount: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open func startAnimating()
+  @_Concurrency.MainActor(unsafe) open func stopAnimating()
+  @_Concurrency.MainActor(unsafe) open var isAnimating: Swift.Bool {
+    get
+  }
+}
+public struct SnapInAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public init()
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+@objc extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func parentIQContainerViewController() -> UIKit.UIViewController?
+  @available(*, deprecated, message: "Due to change in core-logic of handling distance between textField and keyboard distance, this layout contraint tweak is no longer needed and things will just work out of the box regardless of constraint pinned with safeArea/layoutGuide/superview.")
+  @IBOutlet @objc @_Concurrency.MainActor(unsafe) dynamic public var IQLayoutGuideConstraint: UIKit.NSLayoutConstraint? {
+    @objc get
+    @objc set(newValue)
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class IQToolbar : UIKit.UIToolbar, UIKit.UIInputViewAudioFeedback {
+  @objc @_Concurrency.MainActor(unsafe) open var previousBarButton: DoconlineTestFramework.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var nextBarButton: DoconlineTestFramework.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var titleBarButton: DoconlineTestFramework.IQTitleBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var doneBarButton: DoconlineTestFramework.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var fixedSpaceBarButton: DoconlineTestFramework.IQBarButtonItem {
+    @objc get
+    @objc set(newValue)
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func sizeThatFits(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var tintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc open var enableInputClicksWhenVisible: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class KingfisherSource : ObjectiveC.NSObject, ImageSlideshow.InputSource {
+  public var url: Foundation.URL
+  public var placeholder: UIKit.UIImage?
+  public var options: Kingfisher.KingfisherOptionsInfo?
+  public init(url: Foundation.URL, placeholder: UIKit.UIImage? = nil, options: Kingfisher.KingfisherOptionsInfo? = nil)
+  public init?(urlString: Swift.String, placeholder: UIKit.UIImage? = nil, options: Kingfisher.KingfisherOptionsInfo? = nil)
+  @objc public func load(to imageView: UIKit.UIImageView, with callback: @escaping (UIKit.UIImage?) -> Swift.Void)
+  @objc deinit
+}
+public struct ConsecutiveSequence<T> : Swift.IteratorProtocol, Swift.Sequence where T : Swift.IteratorProtocol {
+  public typealias Element = (T.Element, T.Element)
+  public mutating func next() -> DoconlineTestFramework.ConsecutiveSequence<T>.Element?
+  public typealias Iterator = DoconlineTestFramework.ConsecutiveSequence<T>
+}
+extension Swift.Sequence {
+  public func makeConsecutiveIterator() -> DoconlineTestFramework.ConsecutiveSequence<Self.Iterator>
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class GridCollectionViewLayout : UIKit.UICollectionViewLayout {
+  @_Concurrency.MainActor(unsafe) final public var itemSpacing: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var itemsPerRow: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var itemHeightRatio: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var itemSize: CoreFoundation.CGSize {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override final public var collectionViewContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override final public func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForDecorationView(ofKind elementKind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutAttributesForSupplementaryView(ofKind elementKind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct BarData {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MRNListVC : UIKit.UIViewController, DoconlineTestFramework.NVActivityIndicatorViewable {
+  @_Concurrency.MainActor(unsafe) public var username: Swift.String
+  @_Concurrency.MainActor(unsafe) public var accessToken: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension DoconlineTestFramework.MRNListVC : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+@objc public enum JJFloatingActionButtonState : Swift.Int {
+  case closed
+  case open
+  case opening
+  case closing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias GetTimeSlotsCompletionHandler = (_ data: [Swift.String]?, _ error: (any Swift.Error)?) -> ()
+public typealias GetTimeSlots_PrevousConsultedDoc_CompletionHandler = (_ data: [Swift.String]?, _ error: (any Swift.Error)?) -> ()
+public typealias LanguagsCompletionHandler = (_ data: Foundation.Data?, _ error: (any Swift.Error)?) -> ()
+public typealias SpecilistDocsCompletionHandler = (_ data: Foundation.Data?, _ error: (any Swift.Error)?) -> ()
+public typealias PreViousConsulDoctCompletionHandler = (_ data: Foundation.Data?, _ error: (any Swift.Error)?) -> ()
+public typealias FamilyMembersCompletionHandler = (_ data: Foundation.Data?, _ error: (any Swift.Error)?) -> ()
+open class OAuth2Client {
+  public var configuration: DoconlineTestFramework.OAuth2Configuration {
+    get
+  }
+  public var token: DoconlineTestFramework.OAuth2Token? {
+    get
+  }
+  public var clientIsLoadingToken: () -> Swift.Void
+  public var clientDidFinishLoadingToken: (_ token: DoconlineTestFramework.OAuth2Token) -> Swift.Void
+  public var clientDidFailLoadingToken: (_ error: any Swift.Error) -> Swift.Void
+  public init(configuration: DoconlineTestFramework.OAuth2Configuration)
+  open func loadToken()
+  open func saveToken()
+  open func clearToken()
+  open func authorize(from controller: UIKit.UIViewController)
+  open func handle(redirectURL: Foundation.URL)
+  open func refreshAccessToken()
+  open func unauthorize()
+  @objc deinit
+}
+extension DoconlineTestFramework.PDFViewController {
+  @_Concurrency.MainActor(unsafe) final public class func createNew(with document: DoconlineTestFramework.PDFDocument, title: Swift.String? = nil, actionButtonImage: UIKit.UIImage? = nil, actionStyle: DoconlineTestFramework.PDFViewController.ActionStyle = .print, backButton: UIKit.UIBarButtonItem? = nil, isThumbnailsEnabled: Swift.Bool = true, startPageIndex: Swift.Int = 0) -> DoconlineTestFramework.PDFViewController
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class PDFViewController : UIKit.UIViewController {
+  public enum ActionStyle {
+    case print
+    case activitySheet
+    case customAction(() -> ())
+  }
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) final public var collectionView: UIKit.UICollectionView!
+  @_Concurrency.MainActor(unsafe) final public var backgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var scrollDirection: UIKit.UICollectionView.ScrollDirection {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var preferredStatusBarUpdateAnimation: UIKit.UIStatusBarAnimation {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func shouldPerformSegue(withIdentifier identifier: Swift.String, sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension DoconlineTestFramework.PDFViewController : UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+}
+extension DoconlineTestFramework.PDFViewController : UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+}
+extension DoconlineTestFramework.PDFViewController : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+public struct BarValueData {
+  public var height: Swift.Float!
+  public let title: Swift.String
+  public let color: UIKit.UIColor
+  public let titleColor: UIKit.UIColor
+  public let value: Swift.Int
+  public init(title: Swift.String, color: UIKit.UIColor, titleColor: UIKit.UIColor, value: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class LinearProgressBar : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var backgroundProgressBarColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var progressBarColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var heightForLinearBar: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var widthForLinearBar: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) open func startAnimation()
+  @_Concurrency.MainActor(unsafe) open func stopAnimation()
+  @objc deinit
+}
+public struct ZoomInOutAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public var scaleRate: CoreFoundation.CGFloat
+  public init(scaleRate: CoreFoundation.CGFloat = 0.2)
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SimpleBarChartView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var mainLayer: QuartzCore.CALayer!
+  @_Concurrency.MainActor(unsafe) public var scrollView: UIKit.UIScrollView!
+  @_Concurrency.MainActor(unsafe) public var barData: [DoconlineTestFramework.BarData]! {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+public protocol NVActivityIndicatorViewable {
+}
+extension DoconlineTestFramework.NVActivityIndicatorViewable where Self : UIKit.UIViewController {
+  public var isAnimating: Swift.Bool {
+    get
+  }
+  public func startAnimating(_ size: CoreFoundation.CGSize? = nil, message: Swift.String? = nil, messageFont: UIKit.UIFont? = nil, type: DoconlineTestFramework.NVActivityIndicatorType? = nil, color: UIKit.UIColor? = nil, padding: CoreFoundation.CGFloat? = nil, displayTimeThreshold: Swift.Int? = nil, minimumDisplayTime: Swift.Int? = nil, backgroundColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil, fadeInAnimation: DoconlineTestFramework.FadeInAnimation? = NVActivityIndicatorView.DEFAULT_FADE_IN_ANIMATION)
+  public func stopAnimating(_ fadeOutAnimation: DoconlineTestFramework.FadeOutAnimation? = NVActivityIndicatorView.DEFAULT_FADE_OUT_ANIMATION)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DayHeaderView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var daysInWeek: Swift.Int
+  @_Concurrency.MainActor(unsafe) public var calendar: Foundation.Calendar
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func updateStyle(_ newStyle: DoconlineTestFramework.DayHeaderStyle)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func transitionToHorizontalSizeClass(_ sizeClass: UIKit.UIUserInterfaceSizeClass)
+  @objc deinit
+}
+extension DoconlineTestFramework.DayHeaderView : DoconlineTestFramework.DayViewStateUpdating {
+  @_Concurrency.MainActor(unsafe) public func move(from oldDate: Foundation.Date, to newDate: Foundation.Date)
+}
+open class OAuth2Token {
+  open var tokenType: Swift.String?
+  open var accessToken: Swift.String?
+  open var idToken: Swift.String?
+  open var accessTokenExpiry: Foundation.Date?
+  open var refreshToken: Swift.String?
+  public init()
+  @objc deinit
+}
+@objc public class IQBarButtonItemConfiguration : ObjectiveC.NSObject {
+  @objc public init(barButtonSystemItem: UIKit.UIBarButtonItem.SystemItem, action: ObjectiveC.Selector)
+  @objc public init(image: UIKit.UIImage, action: ObjectiveC.Selector)
+  @objc public init(title: Swift.String, action: ObjectiveC.Selector)
+  final public let barButtonSystemItem: UIKit.UIBarButtonItem.SystemItem?
+  @objc final public let image: UIKit.UIImage?
+  @objc final public let title: Swift.String?
+  @objc final public let action: ObjectiveC.Selector?
+  @objc deinit
+}
+@objc extension UIKit.UIImage {
+  @objc public static func keyboardLeftImage() -> UIKit.UIImage?
+  @objc public static func keyboardRightImage() -> UIKit.UIImage?
+  @objc public static func keyboardUpImage() -> UIKit.UIImage?
+  @objc public static func keyboardDownImage() -> UIKit.UIImage?
+  @objc public static func keyboardPreviousImage() -> UIKit.UIImage?
+  @objc public static func keyboardNextImage() -> UIKit.UIImage?
+}
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var keyboardToolbar: DoconlineTestFramework.IQToolbar {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var shouldHideToolbarPlaceholder: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var toolbarPlaceholder: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var drawingToolbarPlaceholder: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addKeyboardToolbarWithTarget(target: Swift.AnyObject?, titleText: Swift.String?, rightBarButtonConfiguration: DoconlineTestFramework.IQBarButtonItemConfiguration?, previousBarButtonConfiguration: DoconlineTestFramework.IQBarButtonItemConfiguration? = nil, nextBarButtonConfiguration: DoconlineTestFramework.IQBarButtonItemConfiguration? = nil)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightButtonOnKeyboardWithImage(_ image: UIKit.UIImage, target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightButtonOnKeyboardWithImage(_ image: UIKit.UIImage, target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightButtonOnKeyboardWithText(_ text: Swift.String, target: Swift.AnyObject?, action: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightButtonOnKeyboardWithText(_ text: Swift.String, target: Swift.AnyObject?, action: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addCancelDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, cancelAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonTitle: Swift.String, rightButtonTitle: Swift.String, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonImage: UIKit.UIImage, rightButtonImage: UIKit.UIImage, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addCancelDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, cancelAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonTitle: Swift.String, rightButtonTitle: Swift.String, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addRightLeftOnKeyboardWithTarget(_ target: Swift.AnyObject?, leftButtonImage: UIKit.UIImage, rightButtonImage: UIKit.UIImage, leftButtonAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPreviousNextDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonImage: UIKit.UIImage, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonTitle: Swift.String, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, shouldShowPlaceholder: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPreviousNextDoneOnKeyboardWithTarget(_ target: Swift.AnyObject?, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, doneAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonImage: UIKit.UIImage, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPreviousNextRightOnKeyboardWithTarget(_ target: Swift.AnyObject?, rightButtonTitle: Swift.String, previousAction: ObjectiveC.Selector, nextAction: ObjectiveC.Selector, rightButtonAction: ObjectiveC.Selector, titleText: Swift.String?)
+}
+public class Indicator {
+  public static let sharedInstance: DoconlineTestFramework.Indicator
+  public init()
+  @objc deinit
+}
+public struct Validation {
+  public var minimumLength: Swift.Int
+  public var maximumLength: Swift.Int?
+  public var maximumValue: Swift.Double?
+  public var minimumValue: Swift.Double?
+  public var characterSet: Foundation.CharacterSet?
+  public var format: Swift.String?
+  public init()
+  public func validateString(_ string: Swift.String, complete: Swift.Bool = true) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class IQTextView : UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
+  @objc deinit
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholderTextColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var attributedPlaceholder: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var delegate: (any UIKit.UITextViewDelegate)? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+}
+public enum UPCarouselFlowLayoutSpacingMode {
+  case fixed(spacing: CoreFoundation.CGFloat)
+  case overlap(visibleOffset: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UPCarouselFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var sideItemScale: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var sideItemAlpha: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var sideItemShift: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var spacingMode: DoconlineTestFramework.UPCarouselFlowLayoutSpacingMode
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func targetContentOffset(forProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint, withScrollingVelocity velocity: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) open class JJActionItem : UIKit.UIControl {
+  @objc @_Concurrency.MainActor(unsafe) open var action: ((DoconlineTestFramework.JJActionItem) -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) public func callAction()
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedButtonColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImageColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var titleLabel: UIKit.UILabel {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var circleView: DoconlineTestFramework.JJCircleView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var titlePosition: DoconlineTestFramework.JJActionItemTitlePosition {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var titleSpacing: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension DoconlineTestFramework.JJActionItem {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func updateConstraints()
+}
+extension DoconlineTestFramework.JJActionItem {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+@_hasMissingDesignatedInitializers public class App {
+  @objc deinit
+}
+public struct LinearCardAttributesAnimator : DoconlineTestFramework.LayoutAttributesAnimator {
+  public var minAlpha: CoreFoundation.CGFloat
+  public var itemSpacing: CoreFoundation.CGFloat
+  public var scaleRate: CoreFoundation.CGFloat
+  public init(minAlpha: CoreFoundation.CGFloat = 0.5, itemSpacing: CoreFoundation.CGFloat = 0.4, scaleRate: CoreFoundation.CGFloat = 0.7)
+  public func animate(collectionView: UIKit.UICollectionView, attributes: DoconlineTestFramework.AnimatedCollectionViewLayoutAttributes)
+}
+public protocol DaySelectorItemProtocol : AnyObject {
+  var date: Foundation.Date { get set }
+  var selected: Swift.Bool { get set }
+  func updateStyle(_ newStyle: DoconlineTestFramework.DaySelectorStyle)
+}
+extension DateToolsSwift.TimeChunk {
+  public static func dateComponents(seconds: Swift.Int = 0, minutes: Swift.Int = 0, hours: Swift.Int = 0, days: Swift.Int = 0, weeks: Swift.Int = 0, months: Swift.Int = 0, years: Swift.Int = 0) -> DateToolsSwift.TimeChunk
+}
+@objc @_Concurrency.MainActor(unsafe) public class TimelineContainer : UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) final public let timeline: DoconlineTestFramework.TimelineView
+  @_Concurrency.MainActor(unsafe) public init(_ timeline: DoconlineTestFramework.TimelineView)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) public func scrollToFirstEvent()
+  @_Concurrency.MainActor(unsafe) public func scrollTo(hour24: Swift.Float)
+  @objc deinit
+}
+public protocol EventDataSource : AnyObject {
+  func eventsForDate(_ date: Foundation.Date) -> [any DoconlineTestFramework.EventDescriptor]
+}
+extension Swift.String {
+  public static var scrollIdentifier: Swift.String
+  public static var graphSelectedStr: Swift.String
+}
+extension Swift.Int {
+  public static var colConstant: Swift.Int
+  public static var rightInsetval: Swift.Int
+  public static var dateDependerVal: Swift.Int
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func setStatusBar(color: UIKit.UIColor)
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func setStatusBarr(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func gradientLayer() -> QuartzCore.CAGradientLayer
+}
+public enum ImageCarouselFlowLayoutSpacingMode {
+  case fixed(spacing: CoreFoundation.CGFloat)
+  case overlap(visibleOffset: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ImageCollectionViewLayout : UIKit.UICollectionViewFlowLayout {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var sideItemScale: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var sideItemAlpha: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var spacingMode: DoconlineTestFramework.ImageCarouselFlowLayoutSpacingMode
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func targetContentOffset(forProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint, withScrollingVelocity velocity: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class Notifications : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension DoconlineTestFramework.Notifications {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DoconlineTestFramework.Notifications>
+  @objc @NSManaged dynamic public var created_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataObject: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var notification_id: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var notification_type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var read_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var updatedate_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class PushData : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension DoconlineTestFramework.PushData {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DoconlineTestFramework.PushData>
+  @objc @NSManaged dynamic public var jobID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var message: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var push_data: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension DoconlineTestFramework.DateStyle : Swift.Equatable {}
+extension DoconlineTestFramework.DateStyle : Swift.Hashable {}
+extension DoconlineTestFramework.Model : Swift.Equatable {}
+extension DoconlineTestFramework.Model : Swift.Hashable {}
+extension DoconlineTestFramework.Model : Swift.RawRepresentable {}
+extension DoconlineTestFramework.StarFillMode : Swift.Equatable {}
+extension DoconlineTestFramework.StarFillMode : Swift.Hashable {}
+extension DoconlineTestFramework.StarFillMode : Swift.RawRepresentable {}
+extension DoconlineTestFramework.MarqueeLabel.MarqueeType : Swift.Equatable {}
+extension DoconlineTestFramework.MarqueeLabel.MarqueeType : Swift.Hashable {}
+extension DoconlineTestFramework.Reachability.NetworkStatus : Swift.Equatable {}
+extension DoconlineTestFramework.Reachability.NetworkStatus : Swift.Hashable {}
+extension DoconlineTestFramework.NVActivityIndicatorType : Swift.Equatable {}
+extension DoconlineTestFramework.NVActivityIndicatorType : Swift.Hashable {}
+extension DoconlineTestFramework.ArchiveErrorType : Swift.Equatable {}
+extension DoconlineTestFramework.ArchiveErrorType : Swift.Hashable {}
+extension DoconlineTestFramework.IQAutoToolbarManageBehaviour : Swift.Equatable {}
+extension DoconlineTestFramework.IQAutoToolbarManageBehaviour : Swift.Hashable {}
+extension DoconlineTestFramework.IQAutoToolbarManageBehaviour : Swift.RawRepresentable {}
+extension DoconlineTestFramework.IQPreviousNextDisplayMode : Swift.Equatable {}
+extension DoconlineTestFramework.IQPreviousNextDisplayMode : Swift.Hashable {}
+extension DoconlineTestFramework.IQPreviousNextDisplayMode : Swift.RawRepresentable {}
+extension DoconlineTestFramework.IQEnableMode : Swift.Equatable {}
+extension DoconlineTestFramework.IQEnableMode : Swift.Hashable {}
+extension DoconlineTestFramework.IQEnableMode : Swift.RawRepresentable {}
+extension DoconlineTestFramework.JJActionItemTitlePosition : Swift.Equatable {}
+extension DoconlineTestFramework.JJActionItemTitlePosition : Swift.Hashable {}
+extension DoconlineTestFramework.JJActionItemTitlePosition : Swift.RawRepresentable {}
+extension DoconlineTestFramework.FlexibleSteppedProgressBarTextLocation : Swift.Equatable {}
+extension DoconlineTestFramework.FlexibleSteppedProgressBarTextLocation : Swift.Hashable {}
+extension DoconlineTestFramework.FlexibleSteppedProgressBarTextLocation : Swift.RawRepresentable {}
+extension DoconlineTestFramework.JJButtonAnimationConfiguration.JJButtonAnimationStyle : Swift.Equatable {}
+extension DoconlineTestFramework.JJButtonAnimationConfiguration.JJButtonAnimationStyle : Swift.Hashable {}
+extension DoconlineTestFramework.JJButtonAnimationConfiguration.JJButtonAnimationStyle : Swift.RawRepresentable {}
+extension DoconlineTestFramework.JJFloatingActionButtonState : Swift.Equatable {}
+extension DoconlineTestFramework.JJFloatingActionButtonState : Swift.Hashable {}
+extension DoconlineTestFramework.JJFloatingActionButtonState : Swift.RawRepresentable {}

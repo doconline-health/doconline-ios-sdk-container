@@ -1,0 +1,3 @@
+{"aggregateBy":[{"dataTypeName":"com.google.calories.expended","dataSourceId":"derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended"}],
+    "startTimeMillis": 1649442600000,
+    "endTimeMillis": 1649528999000}

@@ -1,0 +1,9 @@
+{
+  "aggregateBy": [{
+    "dataTypeName": "com.google.step_count.delta",
+    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps"
+  }],
+  "bucketByTime": { "durationMillis": 86400000 },
+  "startTimeMillis": 1653921401000,
+  "endTimeMillis": 1654053401219
+}
